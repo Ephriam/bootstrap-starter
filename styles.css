@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#navbar-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.navbar {
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-toggler {
+  transition: margin 0.5s;
+}
+
+#side-nav-container {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  z-index: 1;
+}
+
+.side-nav {
+  height: 100%;
+  width: 250px;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: width 0.5s;
+  padding-top: 60px;
+}
+
+.side-nav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-nav a:hover {
+  color: #f1f1f1;
+}
+
+.side-nav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main-content-container {
+  margin-left: 250px; /* Set an initial margin */
+  transition: margin-left 0.5s;
+  margin-top: 65px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.column {
+  display: flex;
+}
+
+.card {
+  width: 18rem;
+  margin-right: 15px;
+}
+
+.navbar-brand img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.side-nav a img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#my-search-box {
+  width: 75vw;
+}
+
+.mxw {
+  max-width: 540px;
+}
+/* Add any additional styling for your cards here */
+
+/* Custom styles for the accordion icons and sublinks */
+.accordion-toggle {
+  position: relative;
+  padding-right: 30px; /* Space for the icon */
+}
+
+.accordion-toggle i {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  transition: transform 0.3s;
+}
+
+.accordion-toggle[aria-expanded="true"] i {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+
+.sublink {
+  margin-left: 10px;
+  color: #333; /* Adjust the color as needed */
+}
+
+/* Highlight the expanded link */
+.accordion-toggle[aria-expanded="true"] {
+  background-color: #202020; /* Slightly grayer background color */
+}
+
+/* Lighten the background color for the selected link */
+.accordion-toggle.active {
+  background-color: #282829; /* 10% lighter background color */
+}
